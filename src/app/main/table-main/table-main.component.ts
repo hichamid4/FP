@@ -1,34 +1,21 @@
 import { Component } from '@angular/core';
 
-export interface PeriodicElement {
-  name: string;
-  position: number;
-  weight: number;
-  symbol: string;
-}
-
-const ELEMENT_DATA: PeriodicElement[] = [
-  {position: 1, name: 'Hydrogen', weight: 1.0079, symbol: 'H'},
-  {position: 2, name: 'Helium', weight: 4.0026, symbol: 'He'},
-  {position: 3, name: 'Lithium', weight: 6.941, symbol: 'Li'},
-  {position: 4, name: 'Beryllium', weight: 9.0122, symbol: 'Be'},
-  {position: 5, name: 'Boron', weight: 10.811, symbol: 'B'},
-  {position: 6, name: 'Carbon', weight: 12.0107, symbol: 'C'},
-  {position: 7, name: 'Nitrogen', weight: 14.0067, symbol: 'N'},
-  {position: 8, name: 'Oxygen', weight: 15.9994, symbol: 'O'},
-  {position: 9, name: 'Fluorine', weight: 18.9984, symbol: 'F'},
-  {position: 10, name: 'Neon', weight: 20.1797, symbol: 'Ne'},
-];
-
 @Component({
   selector: 'app-table-main',
   templateUrl: './table-main.component.html',
   styleUrls: ['./table-main.component.css']
 })
 
-
-
 export class TableMainComponent {
-  displayedColumns: string[] = ['position', 'name', 'weight', 'symbol'];
-  data = ELEMENT_DATA;
+  content = [
+    {name: 'Goa memories', date: Date.now(), access: "Only you"},
+    {name: 'Income tax filing (AY 2021)', date: Date.now(), access: "Only you"},
+    {name: '21 Savage Drake-Middle of the ocean.xlsx', date: Date.now(), access: "Only you"},
+    {name: 'Kid Cudi-Soundtrack to my life.xlsx', date: Date.now(), access: "Only you"},
+    {name: 'Audio recording #4151.xlsx', date: Date.now(), access: "Only you"},
+    {name: 'Invoice for web design.xlsx', date: Date.now(), access: "Only you"},
+    {name: 'How to win friends and influence people.xlsx', date: Date.now(), access: "Only you"},
+    {name: 'HOW to conduct user research.xlsx', date: Date.now(), access: "Only you"},
+    {name: 'state of UX Industry Report 2022.lsx', date: Date.now(), access: "Only you"},
+  ]
 }
